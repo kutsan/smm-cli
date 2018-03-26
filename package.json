@@ -8,9 +8,9 @@
 		"mount",
 		"fuse"
 	],
-	"license": "GPLv3",
+	"license": "GPL-3.0",
 	"author": "Kutsan Kaplan <me@kutsankaplan.com> (https://kutsankaplan.com)",
-	"repository": "github:kutsan/smm",
+	"repository": "github:kutsan/smm-cli",
 	"bin": {
 		"smm": "src/index.zsh"
 	},

@@ -1,4 +1,4 @@
-# smm
+# smm-cli
 
 User-friendly command-line interface for managing devices with [SSHFS](https://github.com/libfuse/sshfs).
 
