@@ -8,7 +8,7 @@
 #   Run this program without arguments to see list of options.
 #
 # @author Kutsan Kaplan <me@kutsankaplan.com>
-# @license GPLv3
+# @license GPL-3.0
 # @version v0.1.0
 ##
 
