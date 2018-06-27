@@ -32,7 +32,7 @@ cat << EOF
     Kutsan Kaplan <me@kutsankaplan.com>
 
   LICENSE
-    GPLv3
+    GPL-3.0
 
   VERSION
     v0.2.0
