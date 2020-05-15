@@ -1,6 +1,6 @@
-# smm-cli
+# `smm-cli` [![npm](https://img.shields.io/npm/v/smm-cli?style=flat-square)](https://www.npmjs.com/package/smm-cli)
 
-User-friendly command-line interface for managing devices with [SSHFS](https://github.com/libfuse/sshfs).
+SSHFS Mount Manager is user-friendly command-line interface for managing devices with [SSHFS](https://github.com/libfuse/sshfs).
 
 ## Installation
 
