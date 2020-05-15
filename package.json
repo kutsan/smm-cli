@@ -6,7 +6,8 @@
 		"sshfs",
 		"ssh",
 		"mount",
-		"fuse"
+		"fuse",
+		"cli"
 	],
 	"repository": "github:kutsan/smm-cli",
 	"license": "GPL-3.0",
