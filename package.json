@@ -2,11 +2,15 @@
 	"name": "smm-cli",
 	"version": "0.2.0",
 	"description": "Command-line interface for SSHFS. Quickly mount, unmount remote directories via SSH.",
-	"preferGlobal": true,
-	"keywords": ["sshfs", "ssh", "mount", "fuse"],
+	"keywords": [
+		"sshfs",
+		"ssh",
+		"mount",
+		"fuse"
+	],
+	"repository": "github:kutsan/smm-cli",
 	"license": "GPL-3.0",
 	"author": "Kutsan Kaplan <me@kutsankaplan.com> (https://kutsankaplan.com)",
-	"repository": "github:kutsan/smm-cli",
 	"bin": {
 		"smm": "src/index.zsh"
 	},
