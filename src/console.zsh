@@ -9,40 +9,40 @@
 ##
 
 function _initialize_colors() {
-	setopt LOCAL_OPTIONS UNSET
+  setopt LOCAL_OPTIONS UNSET
 
-	if [[ "$color" == '' ]] 2>/dev/null {
-		autoload -U colors && colors
-	}
+  if [[ "$color" == '' ]] 2>/dev/null {
+    autoload -U colors && colors
+  }
 }
 _initialize_colors
 
 function console.error() {
-	echo -e "  ${bg[red]}${fg[white]} ERROR ${reset_color} $1" >&2
+  echo -e "  ${bg[red]}${fg[white]} ERROR ${reset_color} $1" >&2
 
-	local i=''
-	for (( i=2; i <= ${#@}; i++ )) {
-		eval "local arg=\$$i"
-		echo "          $arg" >&2
-	}
+  local i=''
+  for (( i=2; i <= ${#@}; i++ )) {
+    eval "local arg=\$$i"
+    echo "          $arg" >&2
+  }
 }
 
 function console.warn() {
-	echo -e "  ${bg[yellow]}${bold_color}${fg[black]} WARN ${reset_color} $1" >&2
+  echo -e "  ${bg[yellow]}${bold_color}${fg[black]} WARN ${reset_color} $1" >&2
 
-	local i=''
-	for (( i=2; i <= ${#@}; i++ )) {
-		eval "local arg=\$$i"
-		echo "         $arg" >&2
-	}
+  local i=''
+  for (( i=2; i <= ${#@}; i++ )) {
+    eval "local arg=\$$i"
+    echo "         $arg" >&2
+  }
 }
 
 function console.info() {
-	echo -e "  ${bg[white]}${bold_color}${fg[black]} INFO ${reset_color} $1"
+  echo -e "  ${bg[white]}${bold_color}${fg[black]} INFO ${reset_color} $1"
 
-	local i=''
-	for (( i=2; i <= ${#@}; i++ )) {
-		eval "local arg=\$$i"
-		echo "         $arg"
-	}
+  local i=''
+  for (( i=2; i <= ${#@}; i++ )) {
+    eval "local arg=\$$i"
+    echo "         $arg"
+  }
 }

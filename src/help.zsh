@@ -39,5 +39,5 @@ cat << EOF
 
 EOF
 
-	exit 0
+  exit 0
 }
