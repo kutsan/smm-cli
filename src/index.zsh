@@ -21,49 +21,49 @@ typeset -g SCRIPT_PATH="$(readlink -f "$0" | xargs dirname)"
 # @param $2 {string} Subcommand arguments.
 ##
 function main() {
-	cd $SCRIPT_PATH
+  cd $SCRIPT_PATH
 
-	local script
-	foreach script (
-		./console.zsh
-		./help.zsh
-		./add.zsh
-		./list.zsh
-		./remove.zsh
-	) {
-		source $script || exit 1
-	}
+  local script
+  foreach script (
+    ./console.zsh
+    ./help.zsh
+    ./add.zsh
+    ./list.zsh
+    ./remove.zsh
+  ) {
+    source $script || exit 1
+  }
 
-	local subcommand=${1:-''}
+  local subcommand=${1:-''}
 
-	case "$subcommand" {
-		'' | '-h' | '--help' | 'help')
-			show_help
-			;;
+  case "$subcommand" {
+    '' | '-h' | '--help' | 'help')
+      show_help
+      ;;
 
-		'--version' | 'version')
-			echo 'smm v0.1.0'
-			exit 0
-			;;
+    '--version' | 'version')
+      echo 'smm v0.1.0'
+      exit 0
+      ;;
 
-		'add' | 'remove' | 'list')
-			hash sshfs &>/dev/null || {
-				echo; console.error "You need to install ${bold_color}sshfs${reset_color} first in order to use this program."; echo
-				exit 1
-			}
+    'add' | 'remove' | 'list')
+      hash sshfs &>/dev/null || {
+        echo; console.error "You need to install ${bold_color}sshfs${reset_color} first in order to use this program."; echo
+        exit 1
+      }
 
-			shift
-			sub_${subcommand} "$@" && exit 0
-			;;
+      shift
+      sub_${subcommand} "$@" && exit 0
+      ;;
 
-		*)
-			echo
-			console.error \
-				"${bold_color}$subcommand${reset_color} is not a known subcommand." \
-				"Run ${bold_color}smm --help${reset_color} for a list of known subcommands."
-			echo
-			exit 1
-			;;
-	}
+    *)
+      echo
+      console.error \
+        "${bold_color}$subcommand${reset_color} is not a known subcommand." \
+        "Run ${bold_color}smm --help${reset_color} for a list of known subcommands."
+      echo
+      exit 1
+      ;;
+  }
 }
 main "$@"
