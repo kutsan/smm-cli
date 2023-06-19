@@ -2,10 +2,6 @@
 
 ##
 # Utility functions for logging to standard output.
-#
-# @author Kutsan Kaplan <me@kutsankaplan.com>
-# @license GPL-3.0
-# @version v0.1.0
 ##
 
 function _initialize_colors() {

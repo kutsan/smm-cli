@@ -11,7 +11,7 @@
   ],
   "repository": "github:kutsan/smm-cli",
   "license": "GPL-3.0",
-  "author": "Kutsan Kaplan <me@kutsankaplan.com> (https://kutsankaplan.com)",
+  "author": "Kutsan Kaplan <me@kutsan.dev> (https://kutsan.dev)",
   "bin": {
     "smm": "src/index.zsh"
   },

@@ -29,7 +29,7 @@ cat << EOF
       .. lists current mount points.
 
   AUTHOR
-    Kutsan Kaplan <me@kutsankaplan.com>
+    Kutsan Kaplan <me@kutsan.dev>
 
   LICENSE
     GPL-3.0

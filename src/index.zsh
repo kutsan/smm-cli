@@ -6,10 +6,6 @@
 #
 # USAGE
 #   Run this program without arguments to see list of options.
-#
-# @author Kutsan Kaplan <me@kutsankaplan.com>
-# @license GPL-3.0
-# @version v0.1.0
 ##
 
 setopt ERR_EXIT NO_UNSET PIPE_FAIL WARN_CREATE_GLOBAL WARN_NESTED_VAR
